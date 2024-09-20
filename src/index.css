@@ -1,0 +1,353 @@
+:root {
+  --box-shadow: white ;
+  --bg-color: black;
+  --border: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 1px solid white;
+  height: 1px;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  text-shadow: 2px 2px 2px #151922;
+}
+
+body {
+  background-color: black;
+  /* rgb(11, 26, 51) */
+  color: white;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* Navbar section */
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  /* margin: auto; */
+  left: 25%;
+  top: 1rem;
+  z-index: 1000;
+
+  border-radius: 20px;
+  height: 50px;
+  width: 55%;
+  background-color: black;
+  color:white;
+  box-shadow: 1px 1px 10px 7px white;
+}
+
+.nav_bar .nav_items {
+  background-color: black;
+  color:white;
+  padding: 15px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 0.3rem;
+}
+
+.nav_bar a:hover {
+  color: white;
+  background-color: black;
+
+  padding: 5px 15px;
+  transition: all 0.3s;
+}
+
+/* Home */
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home .left {
+  width: 40vw;
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: black;
+  box-shadow: white;
+}
+
+.home .right .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.home .right .img img {
+  height: 40vh;
+  width: 20vw;
+  border-radius: 100%;
+  border: 5px solid yellow;
+  animation-name: superman;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes superman {
+  0% {
+    border-color: white;
+    transform: translate(0,0px);
+    box-shadow: 10px 10px 100px 50px white;
+  }
+  25% {
+    border-color: whitesmoke;
+    box-shadow: 10px 10px 100px 50px whitesmoke;
+  }
+  50% {
+    border-color: lightgrey;
+    transform: translate(0, 10px);
+    box-shadow: 10px 10px 100px 50px lightgrey;
+  }
+  75% {
+    border-color: lightslategrey;
+    box-shadow: 10px 10px 100px 50px lightslategrey;
+  }
+  100% {
+    border-color: grey;
+    transform: translate(0, -0px);
+    box-shadow: 10px 10px 100px 50px grey;
+  }
+}
+/* General Card Styles */
+.card,
+.ex-items,
+.skill-item,
+.project-card,
+.ed-card {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+  box-shadow: 2px 2px 10px white !important;
+}
+
+/* Ensure all text inside boxes is black */
+.card * {
+  color: black !important;
+}
+
+.ex-items * {
+  color: black !important;
+}
+
+.skill-item * {
+  color: black !important;
+}
+
+.project-card * {
+  color: black !important;
+}
+
+.ed-card * {
+  color: black !important;
+}
+
+/* Home Section */
+.home .left {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+  box-shadow: 2px 2px 10px white !important;
+}
+
+.home .left * {
+  color: black !important;
+}
+/* Experience */
+.ex-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  margin: 0 1rem;
+  height: 20vh;
+  padding: 0 12px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.ex-items .left img {
+  width: 7vw;
+  height: 10vh;
+  box-shadow: 2px 2px 20px #151922;
+}
+
+.ex-items .right h2 {
+  color: white;;
+}
+
+.ex-items .right h4 {
+  color: black;
+}
+
+/* skills */
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  margin: 1.5rem 1rem;
+  height: 15vh;
+  border-radius: 20px;
+  border: var(--border);
+}
+/* General Card Styles */
+.card,
+.ex-items,
+.skill-item,
+.project-card,
+.ed-card{
+  transition: transform 0.3s ease-in-out !important; /* Add transition for smooth zoom */
+}
+
+/* Zoom-in effect on hover */
+.card:hover,
+.ex-items:hover,
+.skill-item:hover,
+.project-card:hover,
+.ed-card:hover,
+.Home.img:hover,
+.Home.left:hover{
+  transform: scale(1.15) !important; /* Zoom in */
+}
+.container.home .img
+{
+  transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+.container.home .left
+{
+  transition: transform 0.1s ease-in-out; /* Smooth transition for scaling */
+}
+
+
+.container.home .img:hover,
+.container.home .left:hover {
+  transform: scale(1.15); /* Scale effect on hover */
+}
+
+
+.skill-item h2 {
+  color: white;
+}
+
+/* Projects */
+.project-card {
+  background-color: white;
+  border: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.project-card .image {
+  width: 50%;
+}
+
+.project-card .image img {
+  width: 100%;
+  border: var(--border);
+  border-radius: 10px;
+  height: 100%;
+}
+
+.project-button {
+  display: flex;
+  justify-content: center;
+}
+
+.project-button a:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.2);
+  color: white;
+}
+
+/* Education */
+.ed-card {
+  background-color: var(--bg-color);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  margin: 1rem 1.5rem;
+  width: 29%;
+}
+
+/* Contact */
+.contact-form {
+  width: 50%;
+}
+
+.input-field {
+  height: 5vh;
+  border: none;
+  width: 100%;
+}
+
+.input-field::placeholder {
+  text-align: center;
+}
+
+.message-field::placeholder {
+  text-align: center;
+}
+
+.send-button:hover {
+  transform: scale(0.9);
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Links */
+.links-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #292929;
+  box-shadow: 2px 2px 20px white;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+  top: 40%;
+  width: 4%;
+  height: 20%;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.links-box a:hover {
+  color: white;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+

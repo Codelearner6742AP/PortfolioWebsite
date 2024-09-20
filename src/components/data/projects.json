@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio",
+    "imageSrc": "projects/portfoliocheck.gif",
+    "description": "Dynamic portfolio showcasing innovative projects and skills, animated with the AOS library for engaging user experience.",
+    "teckStack": "Tech Stack: React, Bootstrap, AOS",
+    "demo": "https://my-portfolio-eight-ecru-40.vercel.app/",
+    "source": "https://github.com/Daksh-1905/My-Portfolio"
+  },
+
+  {
+    "id": 2,
+    "title": "Advanced Tic Tac Toe",
+    "imageSrc": "projects/tictactoe.gif",
+    "description": "A user rich experience of playing Tic Tac Toe!",
+    "teckStack": "Tech Stack: Next.js, SCSS",
+    "demo": "https://advanced-tic-tac-toe-iota.vercel.app/",
+    "source": "https://github.com/Codelearner6742AP/AdvancedTicTacToe"
+  },
+  {
+    "id": 3,
+    "title": "Task Planner",
+    "imageSrc": "projects/taskplanner.gif",
+    "description": "Achieve your daily goals by listing all your tasks into a Todo List.",
+    "teckStack": "Tech Stack: React, Bootstrap",
+    "demo": "https://task-planner-gamma.vercel.app/",
+    "source": "https://github.com/Codelearner6742AP/TaskPlannerHost"
+  }
+]
